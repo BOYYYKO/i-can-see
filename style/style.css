@@ -2,8 +2,18 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:700,700italic&display=swap&subser=cyrillic-ext");
 @import "fonts";
 
-$fontFamily:"Source Sans Pro";
-$maxWidthContainer: 1145;
+body{
+  background-color: #EBDDD4;
+}
+
+div{
+  font-family: Sourse Sans Pro;
+}
+
+._container {
+  max-width: 1432px;
+  margin: 0 auto;
+}
 
 @font-face {
     font-family: 'icomoon';
