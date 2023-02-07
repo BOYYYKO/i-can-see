@@ -1,25 +1,23 @@
-.header {
-
-}
-
 .header__content {
     max-width: 1432px;
     margin: 0px auto;
 }
-
-._container { }
-
-.header__menu { }
-
-.menu { }
-
-.menu__icon { }
 
 .menu__body { 
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 15px;
+}
+
+.menu__body > div {
+    width: 33%;
+}
+
+.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .menu__list { 

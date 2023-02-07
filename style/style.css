@@ -15,6 +15,76 @@ div{
   margin: 0 auto;
 }
 
+.hello__btn{
+  position: relative;
+  left: 56%;
+}
+
+.btn {
+  letter-spacing: 0.05em;
+  line-height: 44/19 * 100%;
+  background: #7B4218;
+  font-family: 'Source Sans Pro';
+  height: 44px;
+  padding: 0px 20px;
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 15px;
+  color: #DECFC4;;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: background-color 0.3s ease 0s;
+}
+
+.btn:hover{
+  background-color: #845839;
+}
+
+.start{
+  margin-top: 60px;
+  padding: 56px;
+}
+.hello__content{
+  margin: 20px 0px;
+}
+
+.hello__title{
+  width: 431px;
+  text-align: right;
+  font-family: 'Source Sans Pro';
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 38/30 *100%;
+  font-weight: 300px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.hello__text{
+  width: 431px;
+  font-family: 'Source Sans Pro';
+  font-style: bold;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19/15*100%;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.start__container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.start__container > div{
+}
+
+.hello__avatar > img{
+  margin: 0px 32px;
+}
+
 @font-face {
     font-family: 'icomoon';
     src:  url('fonts/icomoon.eot?lqhs86');
