@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:italic,300,500,700italic&display=swap&subser=cyrillic-ext");
+/* GENERAL START */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:italic,300,400,500,700italic&display=swap&subser=cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=Roboto:700,700italic&display=swap&subser=cyrillic-ext");
 @import "fonts";
 
@@ -12,6 +13,119 @@ body{
   margin: 0 auto;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?lqhs86');
+  src:  url('fonts/icomoon.eot?lqhs86#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?lqhs86') format('truetype'),
+    url('fonts/icomoon.woff?lqhs86') format('woff'),
+    url('fonts/icomoon.svg?lqhs86#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Eye:before {
+  content: "\e900";
+  color: #7b4218;
+}
+.icon-GB .path1:before {
+  content: "\e901";
+  color: rgb(238, 238, 238);
+}
+.icon-GB .path2:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(0, 82, 180);
+}
+.icon-GB .path3:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(216, 0, 39);
+}
+.icon-Logo:before {
+  content: "\e904";
+}
+.icon-Menu:before {
+  content: "\e905";
+  color: #7b4218;
+}
+.icon-UA .path1:before {
+  content: "\e906";
+  color: rgb(255, 230, 46);
+}
+.icon-UA .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(66, 139, 193);
+}
+/* GENERAL END */
+
+/* HEADER START */
+.header__content {
+  max-width: 1432px;
+  margin: 0px auto;
+}
+
+.menu__body { 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 15px;
+}
+
+.menu__body > div {
+  width: 33%;
+}
+
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.menu__list { 
+  display: flex;
+  justify-content: flex-end;
+  height: 115px;
+  align-items: center;
+  list-style-type:none;
+}
+
+.menu__list > li {
+  margin: 0px 0px 0px 19px;
+}
+
+.menu__link {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  transition: color 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  color: #7B4218;
+}
+/* HEADER END */
+
+
+/* START START */
 .hello__btn{
   position: relative;
   left: 56%;
@@ -40,8 +154,12 @@ body{
 
 .start{
   margin-top: 60px;
-  padding: 56px;
+  padding: 0px 56px;
 }
+/* START END */
+
+
+/* HELLO START */
 .hello__content{
   margin: 20px 0px;
 }
@@ -99,7 +217,8 @@ body{
 }
 
 .language__link {
-  font-size: 20px;
+  font-family: 'Source Sans Pro';
+  font-size: 15px;
   font-weight: 500;
   color: black;
   transition: color 0.3s ease 0s;
@@ -109,66 +228,198 @@ body{
 .language__link:hover {
   color: #7B4218;
 }
+/* HELLO END */
+  
+/* ABOUT START */
+.about-posts__container{
+  padding: 0px 107px;
+}
 
-@font-face {
-    font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?lqhs86');
-    src:  url('fonts/icomoon.eot?lqhs86#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?lqhs86') format('truetype'),
-      url('fonts/icomoon.woff?lqhs86') format('woff'),
-      url('fonts/icomoon.svg?lqhs86#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
+.about-posts__column{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-posts__item{
+  text-align: center;
+}
+
+.about-posts__title{
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+}
+
+.about-post__title{
+  font-family: 'Source Sans Pro';
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+}
+
+.about-post__text{
+  font-family: 'Source Sans Pro';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  color: black;
+}
+/* ABOUT END */
+
+/* CATALOG START */
+.catalog{
+  padding-top: 130px;
+}
+.catalog__container{
+  padding: 0px 107px;
+}
+
+.catalog__column{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 14px;
+}
+
+.catalog__item{
+  text-align: center;
+}
+
+.catalog__title{
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+}
+
+.image-container{
+  box-sizing: border-box;
+  width: 333px;
+  height: 236px;
+
+  background: radial-gradient(139.49% 144.28% at 0% 6.36%, #8B786B 0%, rgba(139, 120, 107, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  backdrop-filter: blur(35px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px;
+}
+
+.catalog__text{
+  font-family: 'Source Sans Pro';
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 38px;
+  margin-top: 20px;
+  color: black;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.catalog__item > a {
+  text-decoration:none;
+}
+/* CATALOG END */
+
+/* FORM START */
+.form {
+  height: 300px;
+}
+
+.form__container{
+  padding: 0px 107px;
   
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-Eye:before {
-    content: "\e900";
-    color: #7b4218;
-  }
-  .icon-GB .path1:before {
-    content: "\e901";
-    color: rgb(238, 238, 238);
-  }
-  .icon-GB .path2:before {
-    content: "\e902";
-    margin-left: -1em;
-    color: rgb(0, 82, 180);
-  }
-  .icon-GB .path3:before {
-    content: "\e903";
-    margin-left: -1em;
-    color: rgb(216, 0, 39);
-  }
-  .icon-Logo:before {
-    content: "\e904";
-  }
-  .icon-Menu:before {
-    content: "\e905";
-    color: #7b4218;
-  }
-  .icon-UA .path1:before {
-    content: "\e906";
-    color: rgb(255, 230, 46);
-  }
-  .icon-UA .path2:before {
-    content: "\e907";
-    margin-left: -1em;
-    color: rgb(66, 139, 193);
-  }
-  
+  padding-top: 130px;
+}
+
+.form__column{
+  display: flex;
+  background: rgba(123, 66, 24, 0.65);
+}
+.title_container{
+  width: 50%;
+  align-self:center;
+}
+
+.title_block{
+  position:relative;
+  left: 25%;
+}
+
+.photo__container{
+  width: 50%;
+}
+
+.photo__container > img {
+  width: 100%;
+  height: 100%;
+}
+
+.form__title{
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #DECFC4;
+}
+/* FORM END */
+
+/* INPUT START */
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #DECFC4;;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+.form__label {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  color: #DECFC4;;
+}
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 400;
+  border-width: 3px;
+  border-image: #DECFC4;
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #DECFC4;
+  font-weight: 400;
+}
+/* INPUT END */
+
