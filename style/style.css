@@ -4,9 +4,6 @@
 
 body{
   background-color: #EBDDD4;
-}
-
-div{
   font-family: Sourse Sans Pro;
 }
 
@@ -78,11 +75,39 @@ div{
   justify-content: space-evenly;
 }
 
-.start__container > div{
-}
-
 .hello__avatar > img{
   margin: 0px 32px;
+}
+
+.align-left {
+  display: flex;
+  align-items: start;
+}
+
+.language__list { 
+  display: flex;
+  justify-content: flex-start;
+  height: 115px;
+  align-items: center;
+  list-style-type:none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.language__list > li {
+  margin: 0px 19px 0px 0px;
+}
+
+.language__link {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  transition: color 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.language__link:hover {
+  color: #7B4218;
 }
 
 @font-face {
